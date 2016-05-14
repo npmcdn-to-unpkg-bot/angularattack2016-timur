@@ -1,1 +1,7 @@
-
+src
+gulp
+node_modules
+gulpfile.js
+karma.conf.js
+package.json
+README.md
