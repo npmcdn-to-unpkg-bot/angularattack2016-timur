@@ -5,3 +5,4 @@ gulpfile.js
 karma.conf.js
 package.json
 README.md
+typings

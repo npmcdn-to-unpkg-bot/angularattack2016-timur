@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "install": "typings install",
-    "start": "npm-run-all build --parallel watch serve",
+    "start": "npm-run-all build --parallel watch serve test",
+    "test": "mocha -w -R nyan",
     "serve": "lite-server",
     "build": "tsc",
     "watch": "tsc -w",
@@ -30,8 +31,10 @@
     "bootstrap": "^3.3.6"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
+    "mocha": "^2.4.5",
     "npm-run-all": "^2.1.0",
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
