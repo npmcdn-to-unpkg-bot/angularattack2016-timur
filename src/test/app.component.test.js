@@ -4,7 +4,7 @@
 
 import {assert, expect} from 'chai'
 
-describe('a test suite', function() {
+describe('app', function() {
 
   it('should work right', function() {
     expect(true).to.be.true

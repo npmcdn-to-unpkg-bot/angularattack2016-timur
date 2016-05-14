@@ -2,7 +2,6 @@
  * Created by timur on 5/14/16.
  */
 
-
 const gulp = require('gulp'),
   babel = require('gulp-babel'),
   changed = require('gulp-changed'),
