@@ -6,5 +6,5 @@ const gulp = require('gulp'),
   paths = require('../paths')
 
 gulp.task('watch', ['build', 'test'], () => {
-  gulp.watch(paths.source, ['test'])
+  gulp.watch(paths.source_all, ['test'])
 })

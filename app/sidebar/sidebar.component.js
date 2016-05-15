@@ -5,7 +5,7 @@ import {Component} from '@angular/core'
 
 @Component({
   selector: 'sidebar',
-  template: '<div>checkm8</div>'
+  template: '<sidebar>checkm8</sidebar>'
 })
 
 export class SidebarComponent {}

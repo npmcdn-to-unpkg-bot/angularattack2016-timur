@@ -5,6 +5,7 @@
 module.exports = {
 
   source: 'app/**/*.js',
+  source_all: 'app/**/*',
   source_html: 'app/**/*.html',
 
   dist: 'dist',
