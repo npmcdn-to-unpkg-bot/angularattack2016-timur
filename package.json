@@ -43,6 +43,7 @@
     "rimraf": "^2.5.2",
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
+    "typings": "^0.8.1",
     "watchify": "^3.7.0"
   },
   "jspm": {
