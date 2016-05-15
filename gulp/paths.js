@@ -3,8 +3,10 @@
  */
 
 module.exports = {
+
   source: 'src/**/*.js',
-  dist: 'dist',
-  dist_all: 'dist/**/*.js',
-  test: 'dist/test/**/*.js'
+  dist: 'client/dist',
+  dist_all: 'client/dist/**/*.js',
+  test: 'client/dist/test/**/*.js'
+  
 }

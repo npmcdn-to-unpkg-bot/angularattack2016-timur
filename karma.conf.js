@@ -3,12 +3,12 @@
  */
 
 // karma.conf.js
-module.exports = function (config) {
+module.exports = config => {
   config.set({
     frameworks: ['browserify', 'mocha', 'chai'],
 
     files: [
-      'dist/test/**/*.js'
+      'client/dist/test/**/*.js'
     ],
 
     client: {
@@ -19,7 +19,7 @@ module.exports = function (config) {
     },
 
     preprocessors: {
-      'dist/test/**/*.js': ['browserify']
+      'client/dist/test/**/*.js': ['browserify']
     },
 
     browsers: ['Chrome']

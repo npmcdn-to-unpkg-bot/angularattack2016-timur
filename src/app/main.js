@@ -1,9 +1,9 @@
-(function(app) {
+import 'zone.js'
+import 'reflect-metadata'
 
-  document.addEventListener('DOMContentLoaded', function() {
+import {bootstrap} from '@angular/platform-browser-dynamic'
+import {enableProdMode} from '@angular/core'
+import {AppComponent} from './app.component'
 
-    ng.platformBrowserDynamic.bootstrap(app.AppComponent);
-
-  });
-
-})(window.app || (window.app = {}));
+enableProdMode()
+bootstrap(AppComponent)

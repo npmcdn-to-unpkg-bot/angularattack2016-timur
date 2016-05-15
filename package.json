@@ -2,42 +2,26 @@
   "name": "checkm8",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm-run-all build --parallel watch karma serve",
+    "start": "npm-run-all build --parallel watch serve",
     "test": "npm-run-all build --parallel watch karma",
     "build": "gulp build",
     "watch": "gulp watch",
-    "serve": "lite-server",
-    "clean": "rimraf dist node_modules",
+    "serve": "lite-server -c bs-config.json",
+    "clean": "rimraf client/dist node_modules client/dist client/jspm_packages",
     "karma": "karma start"
   },
   "license": "ISC",
-  "dependencies": {
-    "@angular/common": "2.0.0-rc.1",
-    "@angular/compiler": "2.0.0-rc.1",
-    "@angular/core": "2.0.0-rc.1",
-    "@angular/http": "2.0.0-rc.1",
-    "@angular/platform-browser": "2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "@angular/router": "2.0.0-rc.1",
-    "@angular/router-deprecated": "2.0.0-rc.1",
-    "@angular/upgrade": "2.0.0-rc.1",
-    "reflect-metadata": "0.1.3",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "0.6.12",
-    "angular2-in-memory-web-api": "0.0.7",
-    "bootstrap": "^3.3.6"
-  },
   "devDependencies": {
-    "babel-core": "^6.8.0",
     "babel-preset-es2015": "^6.6.0",
     "browserify": "^13.0.1",
     "chai": "^3.5.0",
-    "concurrently": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^1.3.0",
     "gulp-mocha": "^2.2.0",
+    "gulp-typescript": "^2.13.4",
     "gulp-util": "^3.0.7",
+    "jspm": "^0.16.34",
     "karma": "^0.13.22",
     "karma-browserify": "^5.0.5",
     "karma-chai": "^0.1.0",
@@ -49,5 +33,24 @@
     "require-dir": "^0.3.0",
     "rimraf": "^2.5.2",
     "watchify": "^3.7.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "@angular/common": "npm:@angular/common@^2.0.0-rc.1",
+      "@angular/core": "npm:@angular/core@^2.0.0-rc.1",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^2.0.0-rc.1",
+      "crypto": "github:jspm/nodelibs-crypto@^0.1.0",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.3",
+      "rxjs": "npm:rxjs@^5.0.0-beta.7",
+      "zone.js": "npm:zone.js@^0.6.12"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }

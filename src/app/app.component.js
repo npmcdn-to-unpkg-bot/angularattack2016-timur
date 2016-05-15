@@ -1,15 +1,8 @@
-(function(app) {
+import { Component } from '@angular/core'
 
-  app.AppComponent =
+@Component({
+  selector: 'my-app',
+  template: '<h1>My First Angular 2 App</h1>'
+})
 
-    ng.core.Component({
-      selector: 'my-app',
-      template: '<h2>checkm8</h2>'
-    })
-    .Class({
-      constructor: function() {
-
-      }
-    })
-
-})(window.app || (window.app = {}));
+export class AppComponent { }
