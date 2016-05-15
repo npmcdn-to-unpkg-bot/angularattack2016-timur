@@ -3,8 +3,3 @@ jspm_packages
 npm-debug.log
 dist
 .idea
-typings
-app/**/*.js
-app/**/*.js.map
-test/**/*.js
-test/**/*.js.map
