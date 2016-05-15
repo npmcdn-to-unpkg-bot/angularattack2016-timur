@@ -10,8 +10,4 @@ describe('sidebar', () => {
   it('should exist', () => {
     assert(SidebarComponent)
   })
-  it('should have a title of foo', () => {
-    expect(SidebarComponent).to.equal('foo')
-  })
-
 })
