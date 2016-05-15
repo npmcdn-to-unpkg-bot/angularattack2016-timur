@@ -23,5 +23,5 @@ module.exports = config => {
     },
 
     browsers: ['Chrome']
-  });
-};
+  })
+}
