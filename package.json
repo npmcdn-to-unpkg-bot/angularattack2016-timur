@@ -1,13 +1,15 @@
 {
   "version": "1.0.0",
   "scripts": {
-    "install": "typings install && jspm install",
-    "start": "npm-run-all build --parallel watch serve",
-    "test": "npm-run-all build --parallel watch karma",
+    "install": "npm-run-all --parallel typings jspm build",
+    "start": "npm-run-all --parallel watch serve",
+    "test": "npm-run-all --parallel watch karma",
+    "typings": "typings install",
+    "jspm": "jspm install",
     "build": "gulp build",
     "watch": "gulp watch",
     "serve": "lite-server",
-    "clean": "rimraf client/dist node_modules dist jspm_packages typings",
+    "clean": "rimraf node_modules dist jspm_packages typings",
     "karma": "karma start"
   },
   "license": "ISC",
