@@ -4,9 +4,12 @@
 
 module.exports = {
 
-  source: 'src/**/*.js',
+  source: 'app/**/*.js',
+  source_html: 'app/**/*.html',
+
   dist: 'dist',
   dist_all: 'dist/**/*.js',
-  test: 'dist/test/**/*.js'
+
+  test: 'dist/**/*test.js'
   
 }

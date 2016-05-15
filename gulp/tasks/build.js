@@ -9,9 +9,9 @@ const gulp = require('gulp'),
   gutil = require('gulp-util'),
   paths = require('../paths')
 
-gulp.task('build', () => {
+gulp.task('build', ['pipe-html'], () => {
 
-  gutil.log(gutil.colors.magenta('transpiling src to dist...'))
+  gutil.log(gutil.colors.magenta('building app to dist...'))
 
   return gulp.src(paths.source)
     .pipe(changed(paths.dist))
@@ -22,6 +22,15 @@ gulp.task('build', () => {
     .pipe(babel({
       presets: ['es2015']
     }))
+    .pipe(gulp.dest(paths.dist))
+
+})
+
+gulp.task('pipe-html', () => {
+
+  gutil.log(gutil.colors.magenta('piping html files to dist...'))
+  
+  return gulp.src(paths.source_html)
     .pipe(gulp.dest(paths.dist))
 
 })

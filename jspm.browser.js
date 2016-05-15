@@ -4,7 +4,7 @@ SystemJS.config({
     'npm:*': '/jspm_packages/npm/*'
   },
   map: {
-    'app': 'dist/app',
+    'app': 'dist',
     'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
     'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api',
     '@angular': 'https://npmcdn.com/@angular'
