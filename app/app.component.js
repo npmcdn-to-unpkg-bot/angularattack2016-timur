@@ -10,4 +10,7 @@ import {SidebarComponent} from './sidebar/sidebar.component.js'
 })
 
 export class AppComponent {
+  constructor() {
+    this.foo = 'checkm8'
+  }
 }

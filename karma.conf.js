@@ -11,15 +11,15 @@ module.exports = config => {
 
       {pattern: 'dist/**/*.js', included: false, watched: true},
 
-      {pattern: 'dist/test/**/*.js.map', included: false, watched: false}
+      {pattern: 'dist/**/*test.js.map', included: false, watched: false}
     ],
 
     files: [
-      'dist/test/**/*.js'
+      'dist/**/*test.js'
     ],
 
     preprocessors: {
-      'dist/test/**/*.js': ['browserify']
+      'dist/**/*test.js': ['browserify']
     },
 
     browsers: ['Chrome']

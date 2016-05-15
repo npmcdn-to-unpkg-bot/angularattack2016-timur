@@ -2,16 +2,17 @@
  * Created by timur on 5/14/16.
  */
 
+import 'reflect-metadata'
+import 'zone.js'
+
 import {assert, expect} from 'chai'
 
+import {AppComponent} from './app.component'
 
 describe('app', () => {
 
-  const AppComponent = require('../app.component.js').AppComponent
-
-  it('should have a title', () => {
-    const app = new AppComponent()
-    console.log(app)
+  it('should exist', () => {
+    assert(AppComponent)
   })
 
 })
