@@ -20,3 +20,4 @@ function handleError(err) {
   gutil.log(gutil.colors.magenta(err.toString()))
   this.emit('end')
 }
+

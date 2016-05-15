@@ -4,13 +4,14 @@
 
 module.exports = {
 
-  source: 'app/**/*.js',
-  source_all: 'app/**/*',
-  source_html: 'app/**/*.html',
+  source: 'src/**/*.ts',
+  source_all: 'src/**/*',
+  source_html: 'src/**/*.html',
+  source_sass: 'src/**/*.scss',
 
   dist: 'dist',
   dist_all: 'dist/**/*.js',
 
   test: 'dist/**/*test.js'
-  
+
 }

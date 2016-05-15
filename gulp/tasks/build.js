@@ -4,12 +4,15 @@
 
 const gulp = require('gulp'),
   babel = require('gulp-babel'),
-  tsc =require('gulp-typescript'),
+  tsc = require('gulp-typescript'),
   changed = require('gulp-changed'),
   gutil = require('gulp-util'),
+  sass = require('gulp-sass'),
   paths = require('../paths')
 
-gulp.task('build', ['pipe-html'], () => {
+gulp.task('build', ['ts', 'html', 'sass'])
+
+gulp.task('ts', () => {
 
   gutil.log(gutil.colors.magenta('building app to dist...'))
 
@@ -23,14 +26,24 @@ gulp.task('build', ['pipe-html'], () => {
       presets: ['es2015']
     }))
     .pipe(gulp.dest(paths.dist))
-
 })
 
-gulp.task('pipe-html', () => {
+gulp.task('html', () => {
 
   gutil.log(gutil.colors.magenta('piping html files to dist...'))
-  
-  return gulp.src(paths.source_html)
-    .pipe(gulp.dest(paths.dist))
 
+  return gulp.src(paths.source_html)
+    .pipe(changed(paths.dist))
+    .pipe(gulp.dest(paths.dist))
+})
+
+gulp.task('sass', () => {
+
+  gutil.log(gutil.colors.magenta('preprocessing sass files to dist...'))
+
+  return gulp.src(paths.source_sass)
+    .pipe(changed(paths.dist))
+    .pipe(sass()
+      .on('error', sass.logError))
+    .pipe(gulp.dest(paths.dist))
 })

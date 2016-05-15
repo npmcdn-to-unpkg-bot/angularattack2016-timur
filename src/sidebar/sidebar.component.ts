@@ -8,4 +8,6 @@ import {Component} from '@angular/core'
   template: '<sidebar>checkm8</sidebar>'
 })
 
-export class SidebarComponent {}
+export class SidebarComponent {
+
+}
