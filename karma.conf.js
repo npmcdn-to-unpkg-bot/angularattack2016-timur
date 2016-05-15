@@ -8,7 +8,7 @@ module.exports = config => {
     frameworks: ['browserify', 'mocha', 'chai'],
 
     files: [
-      'client/dist/test/**/*.js'
+      'dist/test/**/*.js'
     ],
 
     client: {
@@ -19,7 +19,7 @@ module.exports = config => {
     },
 
     preprocessors: {
-      'client/dist/test/**/*.js': ['browserify']
+      'dist/test/**/*.js': ['browserify']
     },
 
     browsers: ['Chrome']

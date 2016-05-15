@@ -1,5 +1,6 @@
-import 'zone.js'
+
 import 'reflect-metadata'
+import 'zone.js'
 
 import {bootstrap} from '@angular/platform-browser-dynamic'
 import {enableProdMode} from '@angular/core'

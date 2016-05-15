@@ -7,7 +7,7 @@ import {assert, expect} from 'chai'
 describe('app', function() {
 
   it('should work right', function() {
-    expect(true).to.be.true
+    expect(true).to.not.be.false
   })
 
 })
