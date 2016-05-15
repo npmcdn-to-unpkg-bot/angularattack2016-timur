@@ -4,7 +4,7 @@
   "scripts": {
     "install": "typings install",
     "start": "npm-run-all build --parallel watch serve test",
-    "test": "mocha -w -R nyan",
+    "test": "karma start",
     "serve": "lite-server",
     "build": "tsc",
     "watch": "tsc -w",
@@ -31,13 +31,21 @@
     "bootstrap": "^3.3.6"
   },
   "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "browserify": "^13.0.1",
     "chai": "^3.5.0",
-    "concurrently": "^2.0.0",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.5",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.0.1",
     "lite-server": "^2.2.0",
     "mocha": "^2.4.5",
     "npm-run-all": "^2.1.0",
+    "rimraf": "^2.5.2",
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
-    "typings": "^0.8.1"
+    "typings": "^0.8.1",
+    "watchify": "^3.7.0"
   }
 }
