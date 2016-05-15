@@ -1,5 +1,5 @@
 // karma.conf.js
-module.exports = function (config) {
+module.exports = config => {
   config.set({
     frameworks: ['browserify', 'mocha', 'chai'],
 
@@ -17,5 +17,5 @@ module.exports = function (config) {
     },
 
     browsers: ['Chrome']
-  });
-};
+  })
+}
