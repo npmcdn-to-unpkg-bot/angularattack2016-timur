@@ -1,12 +1,5 @@
 /* Master Styles */
-<<<<<<< HEAD
 
-h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
-}
-=======
 body {
     background-color: #369;
 }
@@ -15,8 +8,6 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
 }
-
->>>>>>> 2a7971
 h2, h3 {
     color: #444;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,16 +17,10 @@ body {
     margin: 2em;
 }
 body, input[text], button {
-<<<<<<< HEAD
-    color: #888;
+    color: #A1C2D2;
     font-family: Cambria, Georgia;
 }
 
-=======
-    color: #D2D2D2;
-    font-family: Cambria, Georgia;
-}
->>>>>>> 2a7971
 /*
  * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
  * for the full set of master styles used by the documentation samples
